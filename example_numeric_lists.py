@@ -235,12 +235,15 @@ def illustrate_list_methods():
 
     # Count how many times 111 appears in the list
     ct_of_111 = score_list.count(111)
+    logger.info(f"Count of 111:{ct_of_111}")
 
     # Sort the list in ascending order using the sort() method
     asc_scores2 = score_list.sort()
+    logger.info(f"Sorted list:{score_list}")
 
     # Sort the list in descending order using the sort() method
     desc_scores2 = score_list.sort(reverse=True)
+    logger.info(f"Sorted list(reverse):{score_list}")
 
     # Copy the list to a new list
     new_scores = score_list.copy()
@@ -271,7 +274,7 @@ def illustrate_list_methods():
 def illustrate_list_transformations():
     """This function illustrates transformations that can be applied to a list"""
 
-    logger.info("Score list: {score_list}")
+    logger.info(f"Score list: {score_list}")
 
     # TRANFORMATIONS ............................
 
@@ -296,7 +299,7 @@ def illustrate_list_transformations():
     # Map each element to its square root
     # Say "map x to the square root of x" given score_list
     # remember to cast the result to a list (using square brackets)
-    sqrt_scores = map(lambda x: math.sqrt(x), score_list)
+    sqrt_scores = [map(lambda x: math.sqrt(x), score_list)]
     logger.info(f"Square root of scores: {sqrt_scores}")
 
     # Map each element (radius) to its area
@@ -304,7 +307,7 @@ def illustrate_list_transformations():
     logger.info(f"Radius list: {radius_list}")
     # Say "map r to pi r squared" given radius_list
     # cast the result to a list using square brackets
-    area_list = [map(lambda r: math.pi * r * r, radius_list)]
+    area_list = map(lambda r: math.pi * r * r, radius_list)
     logger.info(f"Area of circles: {area_list}")
 
 
@@ -325,18 +328,18 @@ def illustrate_list_comprehensions():
     # Cast the result to a list using square brackets
 
     scores_over_100 = [x for x in score_list if x > 100]
-    logger.info("Scores over 100 (using list comprehensions!): {scores_over_100}")
+    logger.info(f"Scores over 100 (using list comprehensions!): {scores_over_100}")
 
     # Try again "keep x (for each x in score_list) IF  x < 42"
     scores_under_42 = [x for x in score_list if x < 42]
-    logger.info("Scores under 42 (using list comprehensions!): {scores_under_42}")
+    logger.info(f"Scores under 42 (using list comprehensions!): {scores_under_42}")
 
     # Map each element to its square
     # Say "give me x squared (for each x in score_list)"
     # Cast the result to a list using square brackets
 
     doubled_scores = [x * 2 for x in score_list]
-    logger.info("Doubled scores (using list comprehensions!): {doubled_scores}")
+    logger.info(f"Doubled scores (using list comprehensions!): {doubled_scores}")
 
     # Map each element to its square root
     # Say "give me the square root of x (for each x in score_list)"

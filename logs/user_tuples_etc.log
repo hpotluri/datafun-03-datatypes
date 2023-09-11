@@ -1,0 +1,37 @@
+2023-09-11 09:15:40,014 =============================================================
+2023-09-11 09:15:40,014 =============================================================
+2023-09-11 09:15:40,014 Today is 2023-09-11 at 09:15 AM
+2023-09-11 09:15:40,033 This file is running on: nt Windows 10
+2023-09-11 09:15:40,033 The Python version is: 3.11.4
+2023-09-11 09:15:40,033 The active conda environment is:  None
+2023-09-11 09:15:40,033 The active pip environment is:    None
+2023-09-11 09:15:40,033 The active environment path is:   C:\Users\nnarne\AppData\Local\Programs\Python\Python311
+2023-09-11 09:15:40,035 The current working directory is: C:\Users\nnarne\Documents\datafun-03-datatypes
+2023-09-11 09:15:40,035 This source file is in:           c:\Users\nnarne\Documents\datafun-03-datatypes
+2023-09-11 09:15:40,035 =============================================================
+2023-09-11 09:15:40,035 =============================================================
+2023-09-11 09:15:40,035 Calling functions from main block
+2023-09-11 09:15:40,035 ==============Illustrate Tuples===============
+2023-09-11 09:15:40,035 student1 = ('Annie', 'Corera', 101, 'Information Technology', 'Second')
+2023-09-11 09:15:40,035 student2 = ('Elisabeth', 'Swann', 102, 'Computer Science', 'First')
+2023-09-11 09:15:40,035 student3 = ('Brad', 'Pitt', 103, 'Business Management', 'Second')
+2023-09-11 09:15:40,035 student1 = ('Annie', 'Corera', 101, 'Information Technology', 'Second')
+2023-09-11 09:15:40,035 student2 = ('Elisabeth', 'Swann', 102, 'Computer Science', 'First')
+2023-09-11 09:15:40,035 tupleCat = ('Annie', 'Corera', 101, 'Information Technology', 'Second', 'Elisabeth', 'Swann', 102, 'Computer Science', 'First')
+2023-09-11 09:15:40,035 student1Thrice = ('Annie', 'Corera', 101, 'Information Technology', 'Second', 'Annie', 'Corera', 101, 'Information Technology', 'Second', 'Annie', 'Corera', 101, 'Information Technology', 'Second')
+2023-09-11 09:15:40,035 Quotient: 3, Remainder: 1
+2023-09-11 09:15:40,035 ==============Illustrate Sets===============
+2023-09-11 09:15:40,035 setA = {1, 2, 3, 4, 5}
+2023-09-11 09:15:40,035 setB = {4, 5, 6, 7, 8}
+2023-09-11 09:15:40,035 Union of setA and setB = {1, 2, 3, 4, 5, 6, 7, 8}
+2023-09-11 09:15:40,035 Intersection of setA and setB = {4, 5}
+2023-09-11 09:15:40,035 Difference of setA and setB = {1, 2, 3}
+2023-09-11 09:15:40,036 ==============Illustrate Dictionaries===============
+2023-09-11 09:15:40,036 dogA_dict = {'name': 'Rex', 'age': 2, 'weight_kg': 13.4}
+2023-09-11 09:15:40,036 dogB_dict = {'name': 'Fido', 'age': 3, 'weight_kg': 15.2}
+2023-09-11 09:15:40,036 assessment_dict = {'low': 0, 'medium': 1, 'high': 2}
+2023-09-11 09:15:40,036 data_dict = {'name': ['Alice', 'Bob', 'Charlie', 'David'], 'age': [25, 30, 35, 40], 'income': [50000, 60000, 70000, 80000]}
+2023-09-11 09:15:40,036 Word count is a good way to begin processing text.
+2023-09-11 09:15:40,036 Given text_simple.txt, the word_counts_dict = {'One': 1, 'fish': 3, 'two': 1, 'red': 1, 'blue': 1, 'fish.': 1}
+2023-09-11 09:15:40,036 Given text_simple.txt and comprehensions,
+2023-09-11 09:15:40,036 the the word_counts_dict2 = {'One': 1, 'fish': 3, 'two': 1, 'red': 1, 'blue': 1, 'fish.': 1}

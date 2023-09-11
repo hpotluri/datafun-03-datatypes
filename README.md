@@ -2,9 +2,8 @@
 
 > Practice with Python data types, filter(), map(), and list comprehensions
 
+## Name: Harinya Potluri
+## Date: 09/06/2023
+## Domain: Higher Education
 
-## Get Started
-
-1. Log in to GitHub and fork this repo into your own GitHub account.
-1. On your machine, open VS Code and clone YOUR repo down to your machine.
-1. Open the whole folder in VS Code for editing. 
+> This domain deals with courses offered by the college, students registered for the different courses in college and faculty details.

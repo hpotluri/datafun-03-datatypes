@@ -1,0 +1,27 @@
+2023-09-11 09:14:44,945 =============================================================
+2023-09-11 09:14:44,945 =============================================================
+2023-09-11 09:14:44,945 Today is 2023-09-11 at 09:14 AM
+2023-09-11 09:14:44,972 This file is running on: nt Windows 10
+2023-09-11 09:14:44,972 The Python version is: 3.11.4
+2023-09-11 09:14:44,972 The active conda environment is:  None
+2023-09-11 09:14:44,972 The active pip environment is:    None
+2023-09-11 09:14:44,972 The active environment path is:   C:\Users\nnarne\AppData\Local\Programs\Python\Python311
+2023-09-11 09:14:44,972 The current working directory is: C:\Users\nnarne\Documents\datafun-03-datatypes
+2023-09-11 09:14:44,972 This source file is in:           c:\Users\nnarne\Documents\datafun-03-datatypes
+2023-09-11 09:14:44,972 =============================================================
+2023-09-11 09:14:44,972 =============================================================
+2023-09-11 09:14:44,972 Calling functions from main block
+2023-09-11 09:14:44,972 Calling process_text_woodchuck()
+2023-09-11 09:14:44,978 The list of words is: ['How', 'much', 'wood', 'would', 'a', 'woodchuck', 'chuck', 'if', 'a', 'woodchuck', 'could', 'chuck', 'wood?', 'He', 'would', 'chuck,', 'he', 'would,', 'as', 'much', 'as', 'he', 'could,', 'and', 'chuck', 'as', 'much', 'wood', 'as', 'a', 'woodchuck', 'would', 'if', 'a', 'woodchuck', 'could', 'chuck', 'wood.']
+2023-09-11 09:14:44,978 There are 38 words in the file.
+2023-09-11 09:14:44,978 The set of unique words is: {'wood?', 'would,', 'could,', 'he', 'He', 'chuck', 'would', 'if', 'wood.', 'could', 'as', 'and', 'chuck,', 'wood', 'How', 'much', 'woodchuck', 'a'}
+2023-09-11 09:14:44,978 There are 18 unique words in the file.
+2023-09-11 09:14:44,978 Calling create_random_sentence()
+2023-09-11 09:14:44,978 Random sentence: The scared bird jumps scaredly.
+2023-09-11 09:14:44,978 Calling create_random_sentence()
+2023-09-11 09:14:44,978 Random sentence: The bored cat studies slowly.
+2023-09-11 09:14:44,978 Calling play_game()
+2023-09-11 09:14:44,978 ready_for_continous_game = False
+2023-09-11 09:14:44,978 Not yet ready for continous game of rock, paper, scissors.
+2023-09-11 09:14:44,978 Find the TODO and change False to True to play a game.
+2023-09-11 09:14:44,978 Exiting the function early without kicking off the game.

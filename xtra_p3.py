@@ -21,7 +21,7 @@ logger, logname = setup_logger(__file__)
 
 
 def compare_two_plays():
-    ''' This function compares two plays by Shakespeare.'''
+    """ This function compares two plays by Shakespeare."""
     logger.info("Calling compare_two_plays()")
         
     # read from file and get a list of words
@@ -32,7 +32,6 @@ def compare_two_plays():
 
     logger.info(f"List of words from play 1: {wordlist1}")
 
-
     # read from file and get a list of words
 
     with open("text_juliuscaesar.txt", "r") as f2:
@@ -41,32 +40,21 @@ def compare_two_plays():
 
     logger.info(f"List of words from play 2: {wordlist2}")
 
-
     # Done with files - let the files close and the work begin
 
     # Remove duplicates by creating two sorted sets
     # hint: use sorted() to sort the list
     # hint: use set() to remove duplicates
     # name them wordset1 and wordset2
-    wordset1 = set()  # TODO fix this line
-    wordset2 = set()  # TODO fix this line
-
+    wordset1 = set(sorted(wordlist1))
+    wordset2 = set(sorted(wordlist2))
 
     # initialize a variable maxlen = 10
-    maxlen = 1  # TODO fix this line
-
-    # use a list comprension to get a list of words longer than 10
-    # for word in wordset1
-    # That is:
-    # in a list (e.g. square brackets)
-    # say "[Give me word (for each word in wordset1)
-    #      if len(word) is greater than maxlen]"
-    # then convert the list to a set to we can take the intersection
-    # hint: use set()
-    # name them longwordset1 and longwordset2
-
-    longwordset1 = set()  # TODO: fix this line
-    longwordset2 = set()  # TODO: fix this line
+    maxlen = 10
+    longwordlist1 = [x for x in wordset1 if len(x) > maxlen]
+    longwordlist2 = [x for x in wordset2 if len(x) > maxlen]
+    longwordset1 = set(longwordlist1)
+    longwordset2 = set(longwordlist2)
 
     # find the intersection of the two sets
     # that is, the words in both longwordset1 1 & longwordset2
@@ -102,4 +90,3 @@ if __name__ == "__main__":
 
     logger.info("Complete the code to compare two plays.")
     show_log()
-

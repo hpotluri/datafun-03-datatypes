@@ -95,14 +95,18 @@ def get_winner_message(userguess, botguess):
             return "Paper covers rock - You win!"
         else:
             return "Scissors cuts paper - I win!"
-    # TODO: add the logic for scissors to complete the game
+    elif userguess == "scissors":
+        if botguess == "rock":
+            return "Rock breaks scissors - I win!"
+        else:
+            return "Scissors cuts paper - You win!"
 
 
 def play_game():
     """Play a game of rock, paper, scissors"""
     logger.info("Calling play_game()")
 
-    ready_for_continous_game = True  # TODO: change this when ready
+    ready_for_continous_game = False  # TODO: change this when ready
     logger.info(f"ready_for_continous_game = {ready_for_continous_game}")
 
     if not ready_for_continous_game:
@@ -121,18 +125,18 @@ def play_game():
         # if still here, the bot makes a choice
         # don't indent unnecessarily
         bot_choice = random.choice(list_rps)
-        print(f"You said {user_choice}.")
-        print(f"I said {bot_choice}.")
+        logger.info(f"You said {user_choice}.")
+        logger.info(f"I said {bot_choice}.")
         # When calling a function, the order of arguments matters!
         # We don't want to accidentally provide the guesses in the wrong order
         # So we'll use keyword arguments so the order doesn't matter
         msg1 = get_winner_message(userguess=user_choice, botguess=bot_choice)
         msg2 = get_winner_message(botguess=bot_choice, userguess=user_choice)
         if msg1 == msg2:
-            print(msg1)
+            logger.info(msg1)
         print()
-        print("This program will run forever unless you type q to quit.")
-        print("or use Ctrl-C to stop the program.")
+        logger.info("This program will run forever unless you type q to quit.")
+        logger.info("or use Ctrl-C to stop the program.")
         print()
 
 
